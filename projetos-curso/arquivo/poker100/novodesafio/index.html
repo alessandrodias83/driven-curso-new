@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Driven Eats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DrivenEats</h1>
+        <p>Sua comida em 6 minutos</p>
+    </header>
+
+    <main>
+        <section id="pratos">
+            <h2>Primeiro, seu prato</h2>
+            <div class="itens-pedido">
+                <button class="opcao" data-preco="25.00" onclick="selecionar('prato', this)">
+                    <img src="img/pf_frango.jpg" alt="">
+                    <h1 class="titulo-pedido">Frango Yin Yang</h1>
+                    <h3 class="descricao-pedido">Com salada, arroz e feijão</h3>
+                    <p class="preco-pedido">25.00</p>
+                </button>
+
+                <button class="opcao" data-preco="30.00" onclick="selecionar('prato', this)">
+                    <img src="img/pf_calabresa.png" alt="">
+                    <h1 class="titulo-pedido">PF Calabresa</h1>
+                    <h3 class="descricao-pedido">Com salada, arroz e feijão</h3>
+                    <p class="preco-pedido">30.00</p>
+                </button>
+
+                <button class="opcao" data-preco="20.00" onclick="selecionar('prato', this)">
+                    <img src="img/pf_carne.jpg" alt="">
+                    <h1 class="titulo-pedido">PF Boi</h1>
+                    <h3 class="descricao-pedido">Com salada, arroz e feijão</h3>
+                    <p class="preco-pedido">20.00</p>
+                </button>
+            </div>
+        </section>
+
+        <section id="bebidas">
+            <h2>Bebidas</h2>
+            <div class="itens-pedido">
+                <button class="opcao" data-preco="10.00" onclick="selecionar('bebida', this)">
+                    <img src="img/coca.png" alt="">
+                    <h1 class="titulo-pedido">Coquinha gelada</h1>
+                    <h3 class="descricao-pedido">Lata de 350 ml</h3>
+                    <p class="preco-pedido">4.90</p>
+                </button>
+                <button class="opcao" data-preco="15.00" onclick="selecionar('bebida', this)">
+                    <img src="img/fanta.png" alt="">
+                    <h1 class="titulo-pedido">Fanta Laranja</h1>
+                    <h3 class="descricao-pedido">Lata de 350 ml</h3>
+                    <p class="preco-pedido">4.50</p>
+                </button>
+                <button class="opcao" data-preco="12.00" onclick="selecionar('bebida', this)">
+                    <img src="img/suco.png" alt="">
+                    <h1 class="titulo-pedido">Suco de laranja</h1>
+                    <h3 class="descricao-pedido">Jarra de 500 ml</h3>
+                    <p class="preco-pedido">8.90</p>
+                </button>
+            </div>
+        </section>
+
+        <section id="sobremesas">
+            <h2>Sobremesas</h2>
+            <div class="itens-pedido">
+
+                <button class="opcao" data-preco="8.00" onclick="selecionar('sobremesa', this)">
+                    <img src="img/brownie.png" alt="">
+                    <h1 class="titulo-pedido">Brownie</h1>
+                    <h3 class="descricao-pedido">Sabor chocolate</h3>
+                    <p class="preco-pedido">8.00</p>
+                </button>
+
+                <button class="opcao" data-preco="9.00" onclick="selecionar('sobremesa', this)">
+                    <img src="img/pudim.jpg" alt="">
+                    <h1 class="titulo-pedido">Pudim</h1>
+                    <h3 class="descricao-pedido">Leite condensado</h3>
+                    <p class="preco-pedido">9.00</p>
+                </button>
+                <button class="opcao" data-preco="7.00" onclick="selecionar('sobremesa', this)">
+                    <img src="img/mouse.png" alt="">
+                    <h1 class="titulo-pedido">Mouse</h1>
+                    <h3 class="descricao-pedido">Sabor maracuja</h3>
+                    <p class="preco-pedido">7.00</p>
+                </button>
+            </div>
+        </section>
+
+        <!-- Botão para fechar pedido -->
+        <button id="fechar-pedido" disabled onclick="mostrarResumo()">Selecione os itens</button>
+
+        <!-- Tela transparente com o resumo do pedido -->
+        <div id="resumo-overlay" class="overlay" style="display: none;">
+            <div class="resumo">
+                <h2>Resumo do Pedido</h2>
+                <p id="resumo-prato"></p>
+                <p id="resumo-bebida"></p>
+                <p id="resumo-sobremesa"></p>
+                <p><strong>Total: R$ <span id="resumo-total"></span></strong></p>
+                <div class="acoes">
+                    <button onclick="confirmarPedido()">Confirmar Pedido</button>
+                    <a href="#" onclick="fecharResumo()">Cancelar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

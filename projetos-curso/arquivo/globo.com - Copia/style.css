@@ -1,0 +1,325 @@
+:root {
+    font-family: "Encode Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #EBEDEF;
+}
+
+.link {
+    width: 1250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #EBEDEF;
+}
+
+.link>a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+#g1 {
+    
+color: #C3170C;
+}
+
+#oglobo {
+    color: #1e4b9b;
+}
+
+#valor {
+    color: #006766;
+}
+
+#ge {
+    color: #07aa47;
+}
+
+#cartola {
+    color: #e3662b;
+}
+
+#globoplay {
+    color: #fb0735;
+}
+
+#dropz {
+    color: #ff75bb;
+}
+
+#gshow {
+    color: #ec7d00;
+}
+
+#quem {
+    color: #323333;
+}
+
+#receitas {
+    color: #a81d83;
+}
+
+.noticias {
+    display: flex;
+}
+
+.capa {
+    width: 817px;
+    margin-right: 36px;
+   
+}
+
+.principal {
+    height: 343px;
+    border-bottom: 1px solid #EBEDEF;
+    
+}
+
+.principal h1 {
+    font-size: 52px;
+    font-weight: bold;
+    color: #C4160C;
+    margin-top: 60px;
+    margin-bottom: 29px;
+    
+}
+
+.principal a {
+   text-decoration: none;
+}
+
+.principal p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    color: #303134;
+  
+}
+
+
+.destaques {
+    height: 338px;
+    display: flex;
+    margin-top: 25px;
+    border-bottom: 1px solid #EBEDEF;
+    
+}
+
+.destaques img {
+    width: 193px;
+    height: 110px;
+    border-radius: 12px;
+    margin-bottom: 11px;
+    margin-right: 24px;
+    
+}
+
+.destaques a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #C4170C;
+    
+}
+
+.destaques h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2F3134;
+    margin-top: 6px;
+    margin-right: 24px;
+   
+}
+
+.destaques p {
+    margin-top: 9px;
+    color: #2F3134;
+    margin-right: 24px;
+    
+}
+ 
+.outros-destaques {
+    height: 368px;
+    display: flex;
+    margin-top: 25px;
+   
+}
+
+.outros-destaques a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #C4170C;
+  
+   
+}
+
+.outros-destaques h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2F3134;
+    margin-top: 6px;
+    margin-right: 24px;
+}
+
+.outros-destaques p {
+    font-weight: 400;
+    margin-top: 9px;
+    color: #2F3134;
+    margin-right: 24px;
+  
+}
+
+.separador-vertical {
+    height: 875px;
+    width: 1px;
+    margin-top: 40px;
+    border-left: 1px solid #EBEDEF;
+}
+
+.conteudo {
+  width: 782px;
+  display: flex;
+}
+
+.conteudo img {
+    width: 240px;
+    height: 128px;
+    border-radius: 12px;
+    margin-bottom: 11px;  
+}
+
+.conteudo a {
+    text-decoration: none;
+    color: #16AE54;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.esportes {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+ 
+}
+
+.esportes h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2F3134;
+    margin-top: 6px;
+
+}
+
+.esportes p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2F3134;
+    margin-top: 9px;
+  
+}
+
+.espiao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 40px;
+
+}
+.espiao img {
+    margin-top: 33px;
+ 
+}
+
+.greve-rapoza{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 40px;
+    margin-top: 50px;
+    
+}
+
+.campeonato-frances {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 42px;
+}
+
+
+.variedades {
+   width: 277px;
+   margin-left: 30px;
+}
+
+.variedades img {
+    margin-top: 33px;
+   
+}
+
+.variedades a {
+    text-decoration: none;
+    color: #EC8006;
+    font-size: 14px;
+    font-weight: 500;
+}
+.variedades h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2F3134;
+    margin-top: 6px;
+}
+
+.variedades p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2F3134;
+
+   
+}
+
+.ferias {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 40px;
+  
+}
+
+.verdades-secretas img{
+    margin-top: 46px;
+
+}
+
+.verdades-secretas p {
+    margin-top: 12px;
+}
+
+.nos-tempos-imperador {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 40px;
+}

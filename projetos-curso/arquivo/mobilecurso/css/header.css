@@ -1,0 +1,137 @@
+header {
+    height: 60px;
+    background-color: var(--dark-color);
+    color: #fff;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 28px;
+    margin: 10px;
+}
+
+header .navbar a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+header #menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+
+header #menu a {
+    display: block;
+    padding: .8rem;
+    transition: .5s;
+    margin-right: 30px;
+}
+
+header #menu a:hover {
+    background: var(--terciary-color);
+    border-radius: 5px;
+    color: var(--dark-color);
+
+}
+
+header #btn-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    /* Botão hamburguer visível no mobile */
+    header #btn-mobile {
+        display: block;
+    }
+
+    /* Menu mobile escondido inicialmente */
+    header #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: var(--dark-color);
+        color: #fff;
+        height: 0;
+        transition: 0.6s;
+        z-index: 4;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+ 
+    /* Quando a navbar estiver com a classe active */
+    .navbar.active #menu {
+        
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    header #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        transition: 0.5s;
+    }
+
+    header #menu a:hover {
+      background: var(--terciary-color);
+      color: var(--dark-color);
+      border-radius: 5px;
+    }
+    
+
+    header #btn-mobile {
+        margin-right: 10px;
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background-color: none;
+        
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    /* Estilo para o ícone de hambúrguer */
+    header #hamburger {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+        color: var(--dark-color);
+    }
+
+    header #hamburger::after, #hamburger::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    /* Quando o menu está ativo, transforma o ícone de hambúrguer */
+    .navbar.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    .navbar.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .navbar.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}

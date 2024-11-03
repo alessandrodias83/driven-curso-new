@@ -1,0 +1,248 @@
+body {
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #cf2b2b;
+    position: fixed;
+    top: 0;
+    min-width: 414px;
+    height: 92px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+header .logo {
+    font-size: 44px;
+    font-weight: 400;
+    margin-left: 21px; 
+    font-family: "Righteous", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 16px;
+}
+
+header .subtitulo-logo p{
+    font-size: 18px;
+    font-weight: 400; 
+    margin-left: 21px;
+    margin-bottom: 18px;
+
+}
+
+.container{
+    height: 100%;
+}
+
+.prato {
+    width: 414px;
+    height: 300px;
+    margin-top: 123px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bebida {
+    width: 414px;
+    height: 300px;
+    margin-top: 27px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobremesa {
+    width: 414px;
+    height: 300px;
+    margin-top: 27px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.pratos {
+    display: flex;
+}
+
+.bebidas {
+    display: flex;
+}
+
+.sobremesas {
+    display: flex;
+}
+
+.titulo h1 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-family: "Righteous", sans-serif;
+    margin-bottom: 16px;
+}
+
+.box {
+    background-color: #fff;
+    width: 172px;
+    height: 216px;
+    border: 5px solid #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 9px;
+    margin-left: 10px;    
+    cursor: pointer;
+}
+
+
+.box img {
+    width: 144px;
+    height: 87px;
+    margin-top: 18px;
+    font-weight: 400;
+}
+
+.box h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+    text-align: left;
+}
+
+.box h3 {
+    font-size: 16px;
+    color: #a6a6a6;
+    text-align: justify;
+    margin-top: 8px;
+}
+
+.box p {
+    margin-top: 6px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.descricao {
+    margin-left: 14px;
+    margin-right: 11px;
+    margin-top: 4px;
+}
+
+footer {
+    background-color: #ffffff;
+    width: 414px;
+    height: 92px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+}
+
+
+.pedido button{
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    border: none;
+    background-color: #cbcbcb;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.selecionado {
+    border: 5px solid #32b72f;
+}
+
+.pedido-escolhido {
+    background-color: #32b72f;
+    font-size: 20px;
+    color: #ffffff;
+}
+.pedidos button {
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    border: none;
+    background-color: #32b72f;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.escondido {
+    display: none;
+}
+
+.confirmar-pedido {
+    top: 0;
+    height: 1026px;
+    width: 414px;
+    z-index: 3;
+    background-color: #ffffffdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resumo {
+    height: 377px;
+    width: 353px;
+    background-color: #50D074;
+    color: #ffffff;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.resumo a {
+    text-decoration: none;
+    background-color: #ffffff;
+    height: 52px;
+    width: 329px;
+    border-radius: 52px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #50D074;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.resumo button {
+    background-color: #5068d0;
+    color: #ffffff;
+    border: none;
+    height: 52px;
+    width: 333px;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    bottom: 0;
+}
+
+.confirme-pedido {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.resumo-pedido {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+

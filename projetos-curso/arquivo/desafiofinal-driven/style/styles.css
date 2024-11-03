@@ -1,0 +1,149 @@
+body {
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+header {
+    background-color: #cf2b2b;
+    position: fixed;
+    top: 0;
+    width: 414px;
+    height: 92px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+header .logo {
+    font-size: 44px;
+    font-weight: 400;
+    margin-left: 21px; 
+    font-family: "Righteous", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 16px;
+}
+
+header .subtitulo-logo p{
+    font-size: 18px;
+    font-weight: 400; 
+    margin-left: 21px;
+    margin-bottom: 18px;
+
+}
+
+.container{
+    height: 100%;
+}
+
+.prato {
+    width: 414px;
+    height: 300px;
+    margin-top: 123px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bebida {
+    width: 414px;
+    height: 300px;
+    margin-top: 27px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobremesa {
+    width: 414px;
+    height: 300px;
+    margin-top: 27px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.pratos {
+    display: flex;
+}
+
+.titulo h1 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-family: "Righteous", sans-serif;
+    margin-bottom: 16px;
+}
+
+.box {
+    background-color: #fff;
+    width: 172px;
+    height: 216px;
+    border: 5px solid #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 9px;
+    margin-left: 10px;    
+    cursor: pointer;
+}
+
+
+.box img {
+    width: 144px;
+    height: 87px;
+    margin-top: 18px;
+    font-weight: 400;
+}
+
+.box h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+    text-align: left;
+}
+
+.box h3 {
+    font-size: 16px;
+    color: #a6a6a6;
+    text-align: justify;
+    margin-top: 8px;
+}
+
+.box p {
+    margin-top: 6px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.descricao {
+    margin-left: 14px;
+    margin-right: 11px;
+    margin-top: 4px;
+}
+
+footer {
+    background-color: #ffffff;
+    width: 414px;
+    height: 92px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+}
+
+footer button {
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    border: none;
+    background-color: #cbcbcb;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.selecionado {
+    border: 5px solid #32b72f;
+}

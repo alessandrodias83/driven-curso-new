@@ -1,0 +1,276 @@
+:root {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.container {
+    display: flex;
+    width: 935px;
+    margin: auto;
+}
+
+
+.topo {
+    height: 54px;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #DBDBDB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 29px;
+    width: 103px;
+}
+
+ion-icon {
+    font-size: 22px;
+    padding: 20px;
+
+}
+
+.thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.stories {
+    width: 614px;
+    height: 118px;
+    margin-top: 88px;
+    border: 1px solid #DBDBDB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-bottom: 24px;
+    background-color: #ffffff;
+}
+
+.icon-stories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+.stories img {
+    width: 56px;
+    height: 56px;
+    margin-left: 19px;
+}
+
+.user-stories {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 14.06px;
+    font-stretch: extra-condensed;
+    color: #262626;
+    margin-left: 19px;
+}
+
+.user-post {
+    width: 614px;
+    height: 717px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.user-post a {
+    text-decoration: none;
+    color: #262626;
+}
+
+.user-post a img {
+    width: 612px;
+    height: 612px;
+}
+
+#user {
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+}
+
+.user-id {
+    display: flex;
+    align-items: center;
+    height: 61px;
+    margin-left: 17px;
+}
+
+.user-id p {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+    line-height: 16.41px;
+}
+
+.post {
+    margin-bottom: 60px;
+
+}
+
+.icon-post {
+    display: flex;
+    font-size: 22px;
+    justify-content: space-between;
+
+}
+
+.react {
+    margin-top: -10px;
+    margin-left: 15px;
+}
+
+.save {
+    margin-top: -10px;
+    margin-right: 17.62px;
+}
+
+.siderbar {
+    width: 293px;
+    margin-left: 28px;
+    margin-top: 111px;
+    display: flex;
+    flex-direction: column;
+}
+
+.catana a {
+    display: flex;
+    text-decoration: none;
+}
+
+.catana h1 {
+    font-size: 14px;
+    color: #000000;
+    margin-left: 17px;
+    margin-top: 15px;
+}
+
+.catana p {
+    color: #9b9b9b;
+    margin-left: 17px;
+    margin-top: 3px;
+}
+
+.catana img {
+    height: 56px;
+    width: 56px;
+    border-radius: 28px;
+}
+
+.text-siderbar {
+    margin-top: 24px;
+}
+
+.text-siderbar h1 {
+    color: #8e8e8e;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.sugestao a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.sugestao img {
+    height: 32px;
+    width: 32px;
+    border-radius: 28px;
+    margin-top: 17px;
+}
+
+.text-following {
+    font-size: 14px;
+    color: #000000;
+    margin-left: 17px;
+    margin-top: 25px;
+}
+
+.following {
+    font-size: 12px;
+    color: #139EF2;
+    margin-top: 25px;
+    margin-left: auto;
+}
+
+.sugestao h2 {
+    font-size: 12px;
+    color: #139EF2;
+    margin-right: 1px;
+}
+
+.sugestao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.about {
+    color: #C7C7C7;
+    font-size: 11px;
+    margin-top: 33px;
+}
+
+.meta {
+    color: #C7C7C7;
+    font-size: 11px;
+    margin-top: 18px;
+}
+
+@media (max-width: 935px) {
+    .siderbar {
+        display: none;
+    }
+
+    .stories {
+        margin-left: auto;
+    }
+
+
+    .post {
+       margin-left: 144px;
+    }
+}
+
+@media (max-width: 614px) {
+    .stories {
+        width: 100%;
+        margin-top: 54px;
+        background-color: #fafafa;
+    }
+    .user-post {
+        width: 100%;
+        height: 717px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #DBDBDB;
+        border-radius: 3px;
+        background-color: #ffffff;
+    }
+}

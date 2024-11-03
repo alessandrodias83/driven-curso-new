@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Itens</title>
+    <style>
+        .selected {
+            background-color: yellow;
+        }
+        button:disabled {
+            background-color: grey;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="categoria" data-categoria="1">
+        <div class="item">Item 1.1</div>
+        <div class="item">Item 1.2</div>
+        <div class="item">Item 1.3</div>
+    </div>
+    <div class="categoria" data-categoria="2">
+        <div class="item">Item 2.1</div>
+        <div class="item">Item 2.2</div>
+        <div class="item">Item 2.3</div>
+    </div>
+    <div class="categoria" data-categoria="3">
+        <div class="item">Item 3.1</div>
+        <div class="item">Item 3.2</div>
+        <div class="item">Item 3.3</div>
+    </div>
+    <button id="finalizarPedido" disabled>Finalizar Pedido</button>
+
+    <script>
+        document.querySelectorAll('.item').forEach(item => {
+            item.addEventListener('click', function() {
+                const categoria = this.parentElement.getAttribute('data-categoria');
+                const selectedItem = document.querySelector(`.categoria[data-categoria="${categoria}"] .selected`);
+                
+                if (selectedItem && selectedItem !== this) {
+                    selectedItem.classList.remove('selected');
+                }
+                
+                this.classList.add('selected');
+                verificarSelecao();
+            });
+        });
+
+        function verificarSelecao() {
+            const categorias = document.querySelectorAll('.categoria');
+            let todasSelecionadas = true;
+
+            categorias.forEach(categoria => {
+                if (!categoria.querySelector('.selected')) {
+                    todasSelecionadas = false;
+                }
+            });
+
+            const botaoFinalizar = document.getElementById('finalizarPedido');
+            botaoFinalizar.disabled = !todasSelecionadas;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+:root {
+    font-family: "Encode Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #EBEDEF;
+}
+
+.link {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #EBEDEF;
+}
+
+.link>a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+#oglobo {
+    color: #1e4b9b;
+}
+
+#valor {
+    color: #006766;
+}
+
+#ge {
+    color: #07aa47;
+}
+
+#cartola {
+    color: #e3662b;
+}
+
+#globoplay {
+    color: #fb0735;
+}
+
+#dropz {
+    color: #ff75bb;
+}
+
+#gshow {
+    color: #ec7d00;
+}
+
+#quem {
+    color: #323333;
+}
+
+#receitas {
+    color: #a81d83;
+}
+
+.noticias {
+
+    display: flex;
+}
+
+.capa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.principal {
+    height: 343px;
+    margin-top:60px;
+    border-bottom: 1px solid #EBEDEF;
+    
+   
+}
+
+.principal h1 {
+    color: #c4160c;
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    display: flex;
+        flex-wrap: wrap;
+    
+}
+
+.principal a {
+    text-decoration: none;
+    
+}
+
+.principal p {
+    color: #303134;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+.destaques {
+    height: 338px;
+    display: flex;
+    padding: 19px;
+    border-bottom: 1px solid #EBEDEF;
+}
+
+.destaques img {
+    height: 110px;
+    width: 193px;
+    border-radius: 12px;
+    margin-top: 11px;
+}
+
+
+.destaques a {
+    text-decoration: none;
+}
+
+.destaques h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2F3134;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.destaques p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2F3134;
+}
+.subtitulo {
+    font-size: 14px;
+    font-weight: 500;
+    color: #C4170C;
+    display: flex;
+}
+
+.fogo {
+    margin-left: 24px;
+}
+
+.subway {
+    margin-left: 24px;
+}
+
+.outros-destaques {
+    height: 227px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.outros-destaques a {
+    text-decoration: none;
+   
+}
+
+.outros-destaques h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2F3134;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.outros-destaques p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2F3134;
+  
+}
+
+.o-mlehor-cinema {
+    margin-left: 25px;
+}
+
+.pulmao-de-ferro {
+    margin-left: 25px;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .link {
+        height: 40px;
+    position: fixed;
+        top: 60px;
+    }
+
+    #cartola,
+    #globoplay,
+    #dropz,
+    #gshow,
+    #quem,
+    #receitas {
+        display: none;
+    }
+
+    .principal {
+        margin-top: 120px;
+    }
+
+    .principal a h1{
+        font-size: 32px;
+        line-height: 36px;
+        margin: 15px 0;
+        
+    }
+
+
+}

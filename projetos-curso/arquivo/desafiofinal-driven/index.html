@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+
+    <link rel="stylesheet" href="style/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Driven Eats</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>DrivenEats</h1>
+        </div>
+        <div class="subtitulo-logo">
+            <p>Sua comida em 6 minutos</p>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <section class="prato">
+                <div class="titulo">
+                    <h1>Primeiro, seu prato</h1>
+                </div>
+
+                <div class="pratos">
+                    <div class="box prato-selecionado" onclick="selecionarPrato('prato', this)">
+                        <img src="img/pf_frango.jpg" alt="">
+                        <div class="descricao">
+                            <h2>Frango Yin Yang</h2>
+                            <h3>Acompanha arroz, feijão e farofa</h3>
+                            <p>14.90</p>
+                        </div>
+                    </div>
+                    <div class="box prato-selecionado" onclick="selecionarPrato('prato',this)">
+                        <img src="img/pf_calabresa.png" alt="">
+                        <div class="descricao">
+                            <h2>PF Calabresa</h2>
+                            <h3>Acompanha arroz, feijao e fritas</h3>
+                            <p>16.90</p>
+                        </div>
+                    </div>
+                    <div class="box prato-selecionado" onclick="selecionarPrato('prato',this)">
+                        <img src="img/pf_carne.jpg" alt="">
+                        <div class="descricao">
+                            <h2>PF Boi</h2>
+                            <h3>Acompanha arroz, feijão e salada</h3>
+                            <p>18.90</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="bebida">
+                <div class="titulo">
+                    <h1>Agora, sua bebida</h1>
+                </div>
+                <div class="pratos">
+
+                    <div class="box bebida-selecionada" onclick="selecionarBebida('bibida', this)">
+                        <img src="img/coca.png" alt="">
+                        <div class="descricao">
+                            <h2>Coquinha gelada</h2>
+                            <h3>Lata 350 ml</h3>
+                            <p>4.90</p>
+                        </div>
+                    </div>
+
+                    <div class="box bebida-selecionada" onclick="selecionarBebida('bibida', this)">
+                        <img src="img/fanta.png" alt="">
+                        <div class="descricao">
+                            <h2>Fanta</h2>
+                            <h3>Lata 350 ml</h3>
+                            <p> 4.90</p>
+                        </div>
+                    </div>
+
+                    <div class="box bebida-selecionada" onclick="selecionarBebida('bibida', this)">
+                        <img src="img/suco.png" alt="">
+                        <div class="descricao">
+                            <h2>Suco de Laranja</h2>
+                            <h3>Jarra de 500ml</h3>
+                            <p>8.90</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </section>
+
+            <section class="sobremesa">
+                <div class="titulo">
+                    <h1>Por fim, sua sobremesa</h1>
+                </div>
+                <div class="pratos">
+
+                    <div class="box sobremesa-selecionada" onclick="selecionarSobremesa('sobremesa', this)">
+                        <img src="img/brownie.jpg" alt="">
+                        <div class="descricao">
+                            <h2>Brownie</h2>
+                            <h3>Sabor chocolate</h3>
+                            <p>6.90</p>
+                        </div>
+                    </div>
+
+                    <div class="box sobremesa-selecionada" onclick="selecionarSobremesa('sobremesa', this)">
+                        <img src="img/pudim.jpg" alt="">
+                        <div class="descricao">
+                            <h2>Pudim</h2>
+                            <h3>Sabor Leite Condensado</h3>
+                            <p> 6.90</p>
+                        </div>
+                    </div>
+
+                    <div class="box sobremesa-selecionada" onclick="selecionarSobremesa('sobremesa', this)">
+                        <img src="img/mouse.jpg" alt="">
+                        <div class="descricao">
+                            <h2>Mouse</h2>
+                            <h3>Mouse de Maracujá</h3>
+                            <p>6.90</p>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div >
+            <button class="pedido" id="fechar-pedido" disabled onclick="mostrarResumo()">Selecione os 3 itens <br> para fechar o pedido</button>
+        </div>
+
+        <div id="resumo-overlay" class="overlay" style="display: none;">
+            <div class="resumo">
+                <h2>Confirme seu pedido</h2>
+                <p id="resumo-prato"></p>
+                <p id="resumo-bebida"></p>
+                <p id="resumo-sobremesa"></p>
+
+                <p><strong><span id="resumo-total"></span></strong></p>
+            </div>
+
+            <div class="acoes">
+                <button onclick="confirmarPedido()">
+                    Tudo certo, pode pedir!
+                </button>
+                <a href="#" onclick="fecharResumo()">
+                    Cancelar
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

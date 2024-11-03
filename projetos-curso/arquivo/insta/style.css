@@ -1,0 +1,63 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    width: 614px;
+}
+
+.topo {
+    width: 612px;
+    height: 54px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.logo img{
+    width: 103px;
+    height: 29px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stories {
+    background-color: aqua;
+    height: calc(100vh - 54px);
+    width: 100vw;
+
+   
+}
+
+.feed {
+    background-color: cadetblue;
+    height: 100px;
+    height: calc(100vh - 121px);
+
+}
+
+
+.rodape {
+    height: 54px;
+    width: 612px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #dbdbdb;
+    background-color: #ffffff;
+
+}

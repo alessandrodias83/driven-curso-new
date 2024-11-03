@@ -1,0 +1,156 @@
+:root {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    max-width: 614px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+
+.topo {
+    height: 54px;
+    max-width: 612px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 22px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+}
+
+.logo {}
+
+.logo img {
+    width: 103px;
+    height: 29px;
+}
+
+ion-icon {}
+
+main {
+    position: relative;
+}
+.main {
+    position: absolute;
+}
+
+.stories {
+    overflow: hidden;
+    border-bottom: 1px solid #DBDBDB;
+    height: calc(100vh - 54px);
+
+}
+
+.icon-stories {
+    max-width: 612px;
+    display: flex;
+}
+
+.icon-stories p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 14px;
+    margin-bottom: 18px;
+
+
+}
+
+.stories img {
+    width: 56px;
+    height: 56px;
+    margin-left: 14px;
+}
+
+.user-stories {}
+
+.post {
+    background-color: #ffffff;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.user-post {
+    max-width: 612px;
+}
+
+.user-post img {
+    max-width: 612px;
+}
+
+.user-post a {
+    text-decoration: none;
+}
+
+.user-post a img {}
+
+#user {
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+    margin-left: 17px;
+}
+
+.user-id {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.user-id p {
+    font-size: 14px;
+    color:#262626;
+    margin-left: 15px;
+}
+
+
+
+.icon-post {
+    display: flex;
+    align-items: center;
+}
+
+.react {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+.save {
+    margin-left: 490px;
+    font-size: 22px;
+}
+.siderbar {}
+
+.barra-inferior {
+    height: 54px;
+    max-width: 612px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}

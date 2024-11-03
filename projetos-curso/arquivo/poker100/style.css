@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("poker.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.topo {
+    background-color: #333333;
+    color: #fff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.topo p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 40px;
+}
+
+.topo img {
+    height: 160px;
+}
+.botao-entrar {
+    border: 0;
+    height: 40px;
+    width: 90px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #BB0106;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.botao-entrar:hover {
+    background-color:#c22d32;
+}
+
+.aviso {
+    font-size: 25px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+  
+}
+.selecionar-jogo {
+    height: 400px;
+    width: 410px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+/*.secao {
+    height: 150px;
+    width: 400px;
+    margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}*/
+
+.secao .opcoes {
+    display: flex;
+    width: 100%;
+}
+
+.secao .opcoes button {
+    width: 100%;
+    margin: 0 5px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.secao .opcoes button.selecionado, .avancar {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.titulo {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.texas,
+.omaha,
+.five {
+    height: 60px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #F0F0F0;
+    cursor: pointer;
+}
+.jogadores5,
+.jogadores9 {
+    height: 60px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #F0F0F0;
+    cursor: pointer;
+}
+.avancar {
+    height: 100%;
+    width: 100%;
+    background-color: #27A749;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+.avancar:hover {
+    background-color: #30b353;
+}
+
+.loading-overlay {
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    background-color: #333333d2;
+
+}
+
+.loading-overlay img {
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.loading {
+    height: 100px;
+    margin-bottom: 10px;
+
+}
+.loading-overlay .container img {
+    width: 70px;
+    margin-top: 20px;
+}
+.mensagem-iniciando {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.vermelho {
+    color: red;
+}
+.escondido {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        height: 150px;
+        margin-left: 10px;
+    }
+
+    .botao-entrar {
+        padding: 10px 20px;
+        margin-left: 10px;
+        margin-right: 20px;
+        font-size: 15px;
+    }
+
+    .aviso {
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .selecionar-jogo {
+        margin: 30px;
+    }
+
+    .loading-overlay .container {
+        margin-top: 20px;
+    }
+
+    .loading-overlay .container p {
+        font-size: 25px;
+    }
+
+    .loading-overlay .container img {
+        width: 50px;
+        margin-top: 30px;
+    }
+}

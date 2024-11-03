@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker 100</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topo">
+        <img src="cassino.png" alt="">
+        <p class="aviso">POKER 100 é um site exclusivo para maiores de idade</p>
+        <button onclick="perguntarIdade()" class="botao-entrar">Entrar</button>
+    </div>
+
+    <div class="conteudo">
+        <div class="selecionar-jogo escondido">
+            <div class="secao tipo-jogo">
+                <div class="titulo">Tipo de Jogo</div>
+                <div class="opcoes">
+                    <button class="texas" onclick="selecionarJogo(this)">Texas Hold'em</button>  <!--adicionei a classe entre parenteses na função onclick para faze a seleção dela no JS-->
+                    <button class="omaha" onclick="selecionarJogo(this)">Omaha Higth</button>
+                    <button class="five" onclick="selecionarJogo(this)">Five Card Draw</button>
+                </div>
+            </div>
+            <div class="secao qtd-jogadores">
+                <div class="titulo">Quantidade de Jogadores</div>
+                <div class="opcoes">
+                    <button class="jogadores5" onclick="selecionarJogadores(this)">5</button>
+                    <button class="jogadores9" onclick="selecionarJogadores(this)">9</button>
+                </div>
+            </div>
+            <div class="secao">
+                <div class="opcoes">
+                    <button class="avancar" onclick="jogar()">Continuar</button>
+                </div>
+            </div>
+        </div>
+        <div class="loading-overlay escondido">
+            <div class="container">
+                <img class="loading" src="loading.gif" alt="">
+                <p class="mensagem-iniciando">Iniciando POKER 100</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
